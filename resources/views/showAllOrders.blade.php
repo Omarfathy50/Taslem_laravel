@@ -180,21 +180,21 @@
       @csrf
       <div class="form-group">
         <label for="">Adress</label>
-        <input type="text" id='adress' name='adress' class='form-control'>
+        <input type="text" id='adress' name='adress' class='form-control' placeholder=' Enter Your Adress' required>
       </div>
       <div class="form-group">
         <label for="">Customer</label>
-        <input type="text" id='customer' name='customer' class='form-control'>
+        <input type="text" id='customer' name='customer' class='form-control' placeholder=' Enter Your Name' required>
       </div>
       <div class="form-group">
       <div class="form-group">
         <label for="">Phone</label>
-        <input type="text" id='phone' name='phone' class='form-control'>
+        <input type="text" id='phone' name='phone' class='form-control' placeholder=' Phone Number' required>
       </div>
       <div class="form-group">
         <label for="">Products</label>
        
-        <select id='product_id' name='product_id' class='form-control' multiple data-live-search="true">
+        <select id='product_id' name='product_id' class='form-control' multiple data-live-search="true" required>
         <option value="" selected disabled>Select Product</option>
             @foreach($products as $pr)
                     <option value="{{$pr->id}}">{{$pr->name}}</option>
