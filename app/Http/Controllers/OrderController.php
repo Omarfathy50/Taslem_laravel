@@ -116,7 +116,7 @@ class OrderController extends Controller
         $array= $request->input;
         $n = count($array);
         $min = $array[0];
-        for ($i = 1;$i < $n;$i++) if ($min > $array[$i]) $min = $array[$i];
+        for ($i = 1;$i < $n;$i++) if ($min > $array[$i]&&$array[$i]>0) $min = $array[$i];
         return $min;
      }
     
