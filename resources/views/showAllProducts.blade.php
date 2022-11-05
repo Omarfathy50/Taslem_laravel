@@ -142,11 +142,11 @@
       @csrf
       <div class="form-group">
         <label for="">Name</label>
-        <input type="text" id='name' name='name' class='form-control'>
+        <input type="text" id='name' name='name' class='form-control' required>
       </div>
       <div class="form-group">
         <label for="">Barcode</label>
-        <input type="text" id='barcode' name='barcode' class='form-control'>
+        <input type="text" id='barcode' name='barcode' class='form-control' required>
       </div>
       <div class="form-group">
        
